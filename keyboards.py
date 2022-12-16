@@ -9,5 +9,5 @@ START = ReplyKeyboardMarkup(resize_keyboard=True, row_width=2).add(
 )
 
 APPOINTMENT = InlineKeyboardMarkup().add(InlineKeyboardButton(
-    text='Записаться', callback_data='Записаться'
+    text='📝 Записаться', callback_data='📝 Записаться'
 ))
