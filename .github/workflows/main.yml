@@ -53,6 +53,7 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         script: |
           sudo docker stop astro_praktik_cont
+          sudo docker rm astro_praktik_cont
           sudo docker image pull ${{ secrets.DOCKER_USERNAME }}/astro_praktik
           touch .env
           echo ASTRO_PRAKTIK_TOKEN="${{ secrets.SECRET_KEY }}" >> .env
