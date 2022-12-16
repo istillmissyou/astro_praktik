@@ -2,7 +2,7 @@ import logging
 
 from aiogram import Bot, Dispatcher, executor
 from aiogram.dispatcher.filters.builtin import CommandStart
-from aiogram.types import CallbackQuery, Message
+from aiogram.types import Message
 
 import keyboards
 import messages
