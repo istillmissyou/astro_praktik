@@ -40,9 +40,9 @@ async def key(message: Message):
         )
     else:
         await message.answer(
-        text=messages.ECHO,
-        parse_mode='HTML',
-    )
+            text=messages.ECHO,
+            parse_mode='HTML',
+        )
 
 
 if __name__ == '__main__':
