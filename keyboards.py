@@ -3,7 +3,7 @@ from aiogram.types import (InlineKeyboardButton, InlineKeyboardMarkup,
 
 START = ReplyKeyboardMarkup(resize_keyboard=True, row_width=2).add(
     *[KeyboardButton(name) for name in [
-        'Натальная карта', 'Прогнозирование', 'Детский гороскоп', 'Гороскоп',
+        'Натальная карта', 'Прогнозирование', 'Детский гороскоп',
         'Синастрия', 'Электив',
     ]]
 )
