@@ -50,6 +50,12 @@ async def key(message: Message):
             parse_mode='HTML',
             reply_markup=keyboards.APPOINTMENT,
         )
+    elif message.text == 'Дет. натальная карта':
+        await message.answer(
+            text=messages.CHILDREN_NATAL_CHART,
+            parse_mode='HTML',
+            reply_markup=keyboards.APPOINTMENT,
+        )
     else:
         await message.answer(
             text=messages.ECHO,
