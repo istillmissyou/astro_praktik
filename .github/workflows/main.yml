@@ -57,7 +57,7 @@ jobs:
           sudo docker image pull ${{ secrets.DOCKER_USERNAME }}/astro_praktik
           touch .env
           echo ASTRO_PRAKTIK_TOKEN="${{ secrets.SECRET_KEY }}" >> .env
-          sudo docker run --name astro_praktik_cont --env-file ./.env ssd256/astro_praktik
+          sudo docker run -d --name astro_praktik_cont --env-file ./.env ssd256/astro_praktik
   send_message:
     runs-on: ubuntu-latest
     needs: deploy

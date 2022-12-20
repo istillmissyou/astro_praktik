@@ -38,6 +38,18 @@ async def key(message: Message):
             parse_mode='HTML',
             reply_markup=keyboards.APPOINTMENT,
         )
+    elif message.text == 'Электив':
+        await message.answer(
+            text=messages.ELECTIVE,
+            parse_mode='HTML',
+            reply_markup=keyboards.APPOINTMENT,
+        )
+    elif message.text == 'Детский гороскоп':
+        await message.answer(
+            text=messages.CHILDREN_HOROSCOPE,
+            parse_mode='HTML',
+            reply_markup=keyboards.APPOINTMENT,
+        )
     else:
         await message.answer(
             text=messages.ECHO,
