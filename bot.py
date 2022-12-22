@@ -56,6 +56,12 @@ async def key(message: Message):
             parse_mode='HTML',
             reply_markup=keyboards.APPOINTMENT,
         )
+    elif message.text == 'Прогнозирование':
+        await message.answer(
+            text=messages.PROGNOSTIC,
+            parse_mode='HTML',
+            reply_markup=keyboards.APPOINTMENT,
+        )
     else:
         await message.answer(
             text=messages.ECHO,
