@@ -1,3 +1,4 @@
+![Astro_praktik Workflow](https://github.com/istillmissyou/astro_praktik/actions/workflows/main.yml/badge.svg)
 # Telegram bot consultant for astrologer
 Answers frequently asked questions and makes an appointment for a consultation with an astrologer
 
