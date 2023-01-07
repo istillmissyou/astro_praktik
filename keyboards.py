@@ -7,10 +7,10 @@ START = ReplyKeyboardMarkup(resize_keyboard=True, row_width=2).add(
     ]]
 )
 
-CONSULTATIONS = InlineKeyboardMarkup().add(*[InlineKeyboardButton(
-    text = name, callback_data = name
+CONSULTATIONS = InlineKeyboardMarkup(row_width=2).add(*[InlineKeyboardButton(
+    text=name, callback_data=name
 )for name in [
-    'Натальная карта', 'Дет. натальная карта', 'Прогнозирование', 
+    'Натальная карта', 'Дет. натальная карта', 'Прогнозирование',
     'Детский гороскоп', 'Синастрия', 'Электив',
 ]])
 
