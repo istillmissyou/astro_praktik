@@ -49,9 +49,8 @@ async def key(message: Message):
     elif message.text == '📌 Акции 📌':
         await message.delete()
         await message.answer(
-            text=messages.CONSULTATIONS,
+            text=messages.PROMO,
             parse_mode='HTML',
-            reply_markup=keyboards.APPOINTMENT,
         )
     else:
         await message.answer(
