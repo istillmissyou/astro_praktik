@@ -15,5 +15,5 @@ CONSULTATIONS = InlineKeyboardMarkup(row_width=2).add(*[InlineKeyboardButton(
 ]])
 
 APPOINTMENT = InlineKeyboardMarkup().add(InlineKeyboardButton(
-    text='📲 WhatsApp 📲', callback_data='📲 WhatsApp 📲'
+    text='📲 WhatsApp 📲', url='wa.me/77011551177', callback_data='📲 WhatsApp 📲'
 ))
