@@ -1,13 +1,12 @@
 import logging
 
-
 from aiogram import Bot, Dispatcher, executor
 from aiogram.dispatcher.filters.builtin import CommandStart
 from aiogram.types import Message
 
+from config import TOKEN
 import keyboards
 import messages
-from config import TOKEN
 
 logging.basicConfig(level=logging.INFO)
 
