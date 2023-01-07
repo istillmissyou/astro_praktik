@@ -3,11 +3,17 @@ from aiogram.types import (InlineKeyboardButton, InlineKeyboardMarkup,
 
 START = ReplyKeyboardMarkup(resize_keyboard=True, row_width=2).add(
     *[KeyboardButton(name) for name in [
-        'Натальная карта', 'Прогнозирование', 'Детский гороскоп',
-        'Синастрия', 'Дет. натальная карта', 'Электив',
+        '💫 Консультации 💫', '📝 Записаться 📝', '🧮 Цены 🧮', '📌 Акции 📌',
     ]]
 )
 
+CONSULTATIONS = InlineKeyboardMarkup().add(*[InlineKeyboardButton(
+    text = name, callback_data = name
+)for name in [
+    'Натальная карта', 'Дет. натальная карта', 'Прогнозирование', 
+    'Детский гороскоп', 'Синастрия', 'Электив',
+]])
+
 APPOINTMENT = InlineKeyboardMarkup().add(InlineKeyboardButton(
-    text='📝 Записаться', callback_data='📝 Записаться'
+    text='📲 WhatsApp 📲', callback_data='📲 WhatsApp 📲'
 ))
