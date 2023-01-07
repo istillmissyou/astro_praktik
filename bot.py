@@ -1,6 +1,4 @@
 import logging
-from aiogram.types import (InlineKeyboardButton, InlineKeyboardMarkup,
-                           KeyboardButton, ReplyKeyboardMarkup)
 
 
 from aiogram import Bot, Dispatcher, executor
