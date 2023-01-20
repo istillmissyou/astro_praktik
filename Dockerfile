@@ -8,6 +8,6 @@ RUN pip install --upgrade pip
 
 RUN pip3 install -r requirements.txt --no-cache-dir
 
-COPY . .
+COPY bot/ media/ .
 
-CMD ["python3", "bot/bot.py"]
+CMD ["python3", "bot.py"]

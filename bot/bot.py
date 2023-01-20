@@ -20,7 +20,7 @@ num_start = 0
 async def start(message: Message):
     global num_start
     await message.answer_photo(
-        photo=InputFile('../media/start.jpeg'),
+        photo=InputFile('./start.jpeg'),
         caption=messages.START.format(message.chat.first_name),
         parse_mode='HTML',
         reply_markup=keyboards.START,
