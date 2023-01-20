@@ -15,6 +15,7 @@ dp = Dispatcher(bot)
 
 num_start = 0
 
+
 @dp.message_handler(CommandStart())
 async def start(message: Message):
     global num_start
